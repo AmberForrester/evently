@@ -10,10 +10,10 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Evently",
+  title: "Evently | Event Management",
   description: "Event management platform",
   icons: {
-    icon: "/assets/images/logo.svg"
+    icon: "/assets/images/logo2.svg"
   }
 }
 
