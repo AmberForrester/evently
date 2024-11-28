@@ -12,13 +12,23 @@ import Event from "../database/models/event.model";
 
 export const createUser = async (user: CreateUserParams) => {
     try {
+        // Validate required fields
+        if (!user.clerkId || !user.email || !user.username || !user.firstName || !user.lastName) {
+          console.error("Validation failed in createUser. Missing fields:", user);
+          throw new Error("Missing required fields for user creation.");
+      }
+
+      console.log("Connecting to database...");
       await connectToDatabase();
 
+      console.log("Creating user in MongoDB with data:", user);
       const newUser = await User.create(user);
 
+      console.log("User successfully created in MongoDB:", newUser);
       return JSON.parse(JSON.stringify(newUser));
     } 
         catch (error) {
+        console.error("Error creating user in MongoDB:", error);
         handleError(error);
     }
 }
