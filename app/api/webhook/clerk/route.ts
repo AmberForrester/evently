@@ -1,10 +1,10 @@
 import { Webhook } from "svix";
 import { headers } from "next/headers";
 import { WebhookEvent } from "@clerk/nextjs/server";
-import { createUser } from "@/lib/actions/user.actions";
+import { createUser, deleteUser, updateUser } from "@/lib/actions/user.actions";
 import { clerkClient } from "@clerk/clerk-sdk-node";
 import { NextResponse } from "next/server";
-import { CreateUserParams } from "@/types";
+import { CreateUserParams, UpdateUserParams } from "@/types";
 
 export async function POST(req: Request) {
   const SIGNING_SECRET = process.env.SIGNING_SECRET
@@ -89,5 +89,38 @@ export async function POST(req: Request) {
     return NextResponse.json({ message: "OK", user: newUser })
   }
 
-  return new Response('Webhook received', { status: 200 })
+  if (eventType === 'user.updated') {
+    const {
+      id,
+      image_url, 
+      first_name,
+      last_name,
+      username
+    } = evt.data
+
+    if (!first_name || !last_name) {
+      throw new Error("First name and last name are required.");
+    }
+
+    const user: UpdateUserParams = {
+      firstName: first_name,
+      lastName: last_name,
+      username: username!,
+      photo: image_url,
+    }
+
+    const updatedUser = await updateUser(id, user)
+
+    return NextResponse.json({ message: "OK", user: updatedUser })
+  }
+
+  if (eventType === 'user.deleted') {
+    const { id } = evt.data
+
+    const deletedUser = await deleteUser(id!)
+
+    return NextResponse.json({ message: "OK", user: deletedUser })
+  }
+
+  return new Response('', { status: 200 })
 }
