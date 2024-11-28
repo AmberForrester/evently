@@ -1,12 +1,36 @@
-import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server'
+import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server';
 
-const isPublicRoute = createRouteMatcher(['/sign-in(.*)', '/sign-up(.*)'])
+// Define public and ignored routes
+const publicRoutes = [
+  '/',
+  '/sign-in(.*)',
+  '/sign-up(.*)',
+  '/events/:id',
+  '/api/webhook/clerk',
+  '/api/webhook/stripe',
+  '/api/uploadthing',
+];
+
+const ignoredRoutes = [
+  '/api/webhook/clerk',
+  '/api/webhook/stripe',
+  '/api/uploadthing',
+];
+
+const isPublicRoute = createRouteMatcher(publicRoutes);
+const isIgnoredRoute = createRouteMatcher(ignoredRoutes);
 
 export default clerkMiddleware(async (auth, request) => {
-  if (!isPublicRoute(request)) {
-    await auth.protect()
+  // Skip Clerk middleware for ignored routes
+  if (isIgnoredRoute(request)) {
+    return;
   }
-})
+
+  // Protect all non-public routes + retain flexibility to define accessible pages like /sign-in, /sign-up, /events/:id
+  if (!isPublicRoute(request)) {
+    await auth.protect(); // Ensure authenticated access for all routes that are not public.
+  }
+});
 
 export const config = {
   matcher: [
@@ -15,4 +39,4 @@ export const config = {
     // Always run for API routes
     '/(api|trpc)(.*)',
   ],
-}
+};
