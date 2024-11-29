@@ -6,6 +6,8 @@ import Link from "next/link";
 
 
 export default function Home() {
+  
+
   return (
     <>
       <section className="bg-primary-50 bg-dotted-pattern bg-contain py-5 md:py-10">
@@ -43,6 +45,9 @@ export default function Home() {
           emptyTitle="No Events Found"
           emptyStateSubtext="Come back later"
           collectionType="All_Events"
+          limit={6}
+          page={1}
+          totalPages={2}
         />
       </section>
     </>
