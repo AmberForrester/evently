@@ -122,7 +122,7 @@ const EventForm = ({ userId, type }: EventFormProps) => {
                             height={24}
                         />
 
-                        <Input placeholder="Event Location or Virtual Link" {...field} className="input-field" />
+                        <Input placeholder="Event Location or Online" {...field} className="input-field" />
                     </div>
 
                     
@@ -234,7 +234,12 @@ const EventForm = ({ userId, type }: EventFormProps) => {
                                 <div className="flex items-center">
                                     <label htmlFor="isFree" className="whitespace-nowrap pr-3 leading-none perr-disabled:cursor-not-allowed perr-disabled:opacity-70">Free Ticket</label>
                                     
-                                    <Checkbox id="isFree" className="mr-2 h-5 w-5 border-2 border-primary-500" />
+                                    <Checkbox 
+                                        onCheckedChange={field.onChange}
+                                        checked={field.value}
+                                        id="isFree" 
+                                        className="mr-2 h-5 w-5 border-2 border-primary-500" 
+                                    />
                                 </div>
 
                         </FormControl>
