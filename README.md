@@ -35,7 +35,8 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-* [Clerk - webhooks](https://clerk.com/docs/webhooks/sync-data)
+* [Clerk - Webhooks](https://clerk.com/docs/webhooks/sync-data)
+* [Clerk - Customize Session Tokens](https://clerk.com/docs/backend-requests/making/custom-session-token)
 * [Shadcn/ui](https://ui.shadcn.com/docs)
 * [Zod - TypeScript schema validation](https://zod.dev/)
 * [Vercel Functions](https://vercel.com/docs/functions)
