@@ -1,4 +1,5 @@
-import { getEventById } from "@/lib/actions/event.actions";
+import Collection from "@/components/shared/Collection";
+import { getEventById, getRelatedEventsByCategory } from "@/lib/actions/event.actions";
 import { formatDateTime } from "@/lib/utils";
 import { SearchParamProps } from "@/types";
 import Image from "next/image";
@@ -7,7 +8,14 @@ import Image from "next/image";
 const EventDetails = async ({ params: { id }}: SearchParamProps) => {
     const event = await getEventById(id);
 
+    const relatedEvents = await getRelatedEventsByCategory({
+        categoryId: event.category._id,
+        eventId: event._id,
+        page:
+    })
+
   return (
+    <>
     <section className="flex justify-center bg-primary-50 bg-dotted-pattern bg-contain">
         <div className="grid grid-cols-1 md:grid-cols-2 2xl:max-w-7xl">
             <Image 
@@ -25,7 +33,7 @@ const EventDetails = async ({ params: { id }}: SearchParamProps) => {
                     <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
                         <div className="flex gap-3">
                             <p className="p-bold-20 rounded-full bg-green-500/10 px-5 py-2 text-green-700">
-                                {event.isFree ? "Free" : `${event.price}`}
+                                {event.isFree ? "Free" : `$${event.price}`}
                             </p>
 
                             <p className="p-medium-16 rounded-full bg-grey-500/10 px-4 py-2.5 text-grey-500">
@@ -88,6 +96,23 @@ const EventDetails = async ({ params: { id }}: SearchParamProps) => {
             </div>
         </div>
     </section>
+
+    {/* RELATED EVENTS */}
+
+    <section className="wrapper my-8 flex flex-col gap-8 md:gap-12">
+        <h2 className="h2-bold">Related Events</h2>
+
+        <Collection 
+          data={events?.data}
+          emptyTitle="No Events Found"
+          emptyStateSubtext="Come back later"
+          collectionType="All_Events"
+          limit={6}
+          page={1}
+          totalPages={2}
+        />
+    </section>
+    </>
   )
 };
 
