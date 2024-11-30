@@ -1,4 +1,5 @@
 import { IEvent } from "@/lib/database/models/event.model";
+import Card from "./Card";
 
 
 type CollectionProps = {
@@ -32,7 +33,11 @@ const Collection = ({
 
             return (
               <li key={event._id} className="flex justify-center">
-                
+                <Card 
+                  event={event}
+                  hasOrderLink={hasOrderLink}
+                  hidePrice={hidePrice}
+                />
               </li>
             )
           })}
