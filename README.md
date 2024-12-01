@@ -6,7 +6,7 @@
 
 <img src="/public/assets/images/homepage.png" alt="Picture of Evently homepage">
 
-<p align="center">Inspired by Eventbrite, Evently was built to enhance your ablity to create, organize, and manage events with features like authentication, smart search & filters, dynamic categories, and seamless Stripe-powered checkout.
+<p align="center">Inspired by Eventbrite, Evently was built to enhance your ablity to create, organize, and manage events with features like authentication, search, dynamic categories, and seamless Stripe powered checkout.
 <br/>
 <br/>
 Built with cutting-edge tools like Next.js 14, Tailwind CSS, and Clerk for a secure, scalable, and user-friendly experience.
@@ -71,7 +71,7 @@ Built with cutting-edge tools like Next.js 14, Tailwind CSS, and Clerk for a sec
 - [MongoDB](https://www.mongodb.com/) - Utilizing a mongoose connection
 - [Zod](https://zod.dev/) - TypeScript-first schema validation
 - [Postman](https://www.postman.com/) - Collaborative API development
-- []() - Create an account to receive your credentials, and create a new project.
+- [Stripe](https://stripe.com/)
 
 
 
@@ -203,7 +203,7 @@ Please take some time to check out the links below! I found value in each and ev
 * [GitHub Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#animal-bug)
 
 > [!TIP]
-> The most efficient way to deploy your Next.js application is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) directly from the creators of Next.js 
+> Deploy your Next.js application using the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) directly from the creators of Next.js!
 
 For more details, check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment).
 
@@ -217,8 +217,6 @@ For more details, check out the [Next.js deployment documentation](https://nextj
 * [Vercel Functions](https://vercel.com/docs/functions)
 * [useDropzone - uploadthing for Next.js](https://v6.docs.uploadthing.com/api-reference/react#usedropzone)
 * [Mongoose](https://www.npmjs.com/package/mongoose)
-* [react-datepicker](https://www.npmjs.com/package/react-datepicker)
-* [Stripe](https://stripe.com/)
 * [Stripe-hosted page Docs(Next.js)](https://docs.stripe.com/checkout/quickstart?lang=node&client=next)
 
 Stripe Test Card
