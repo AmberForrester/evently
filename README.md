@@ -45,6 +45,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 * [Stripe](https://stripe.com/)
 * [Stripe-hosted page Docs(Next.js)](https://docs.stripe.com/checkout/quickstart?lang=node&client=next)
 
+Stripe Test Card
+https://docs.stripe.com/testing
+
 # https://dashboard.stripe.com/apikeys
 
 # Set this environment variable to support webhooks — https://stripe.com/docs/webhooks#verify-events
