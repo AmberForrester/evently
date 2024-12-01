@@ -42,3 +42,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 * [Vercel Functions](https://vercel.com/docs/functions)
 * [useDropzone - uploadthing for Next.js](https://v6.docs.uploadthing.com/api-reference/react#usedropzone)
 * [react-datepicker](https://www.npmjs.com/package/react-datepicker)
+* [Stripe](https://stripe.com/)
+* [Stripe-hosted page Docs(Next.js)](https://docs.stripe.com/checkout/quickstart?lang=node&client=next)
