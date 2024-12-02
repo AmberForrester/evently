@@ -140,7 +140,7 @@ This step will prevent the `.env.local` file from being tracked by Git and keep 
 
 Use the following links below to help you configure your project: 
 
-### 1. It it highly recommended that you sync your Clerk data to your application using webhooks:
+### 1. Sync your Clerk data to your application using webhooks:
 
 [Clerk - Webhooks](https://clerk.com/docs/webhooks/sync-data)
 
@@ -150,13 +150,17 @@ Following the above documentation to subsribe to all <ins>user</ins> events -
 
 
 
-### 2. Add custom session tokens to include additional claims that you may need in your application: 
+### 2. Add custom session tokens to include additional claims in your application: 
 
 [Clerk - Customize Session Tokens](https://clerk.com/docs/backend-requests/making/custom-session-token)
 
 Add any claim to your session token that you need -
 
 <img src="/public/assets/images/custom_session_token.png" alt="Customized Session Token using Clerk's Dashboard">
+
+
+
+### 3. 
 
 
 
