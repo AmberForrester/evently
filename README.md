@@ -71,6 +71,7 @@ Built with cutting-edge tools like Next.js 14, Tailwind CSS, and Clerk for a sec
 - [Clerk](https://clerk.com/)
 - [MongoDB](https://www.mongodb.com/)
 - [Zod](https://zod.dev/)
+- [UploadThing](https://uploadthing.com/)
 - [Postman](https://www.postman.com/)
 - [Stripe](https://stripe.com/)
 
@@ -138,19 +139,9 @@ This step will prevent the `.env.local` file from being tracked by Git and keep 
 
 ## Special Considerations
 
-Use the following links below to help you configure your project: 
+Use the following links below to help you configure your project for seamless integrations.
 
-### 1. Sync your Clerk data to your application using webhooks:
-
-[Clerk - Webhooks](https://clerk.com/docs/webhooks/sync-data)
-
-Following the above documentation to subsribe to all <ins>user</ins> events - 
-
-<img src="/public/assets/images/webhook_events.png" alt="Clerk Subscribed Webhook Events">
-
-
-
-### 2. Add custom session tokens to include additional claims in your application: 
+### 1. Add custom session tokens to include additional claims in your application 
 
 [Clerk - Customize Session Tokens](https://clerk.com/docs/backend-requests/making/custom-session-token)
 
@@ -160,8 +151,24 @@ Add any claim to your session token that you need -
 
 
 
-### 3. 
+### 2. Sync your Clerk data to your application using webhooks
 
+[Clerk - Webhooks](https://clerk.com/docs/webhooks/sync-data)
+
+Following the above documentation to subsribe to all <ins>user</ins> events - 
+
+<img src="/public/assets/images/webhook_events.png" alt="Clerk Subscribed Webhook Events">
+
+
+
+### 3. Secure your webhook enpoint to receive real-time event data from Stripe: 
+
+Listen to events in your Stripe account on your webhook endpoint - 
+[Stripe - Webhook Endpoint](https://stripe.com/docs/webhooks#verify-events)
+
+Register your endpoint within [Stripe - Dashboard](https://dashboard.stripe.com/apikeys)
+
+Follow this [Stripe-hosted page (Next.js)](https://docs.stripe.com/checkout/quickstart?lang=node&client=next), using their interactive working code samples to integrate with Stripe Checkout. 
 
 
 
@@ -252,7 +259,3 @@ Please take some time to check out the links below! I found value in each and ev
 
 Stripe Test Card
 https://docs.stripe.com/testing
-
-# https://dashboard.stripe.com/apikeys
-
-# Set this environment variable to support webhooks — https://stripe.com/docs/webhooks#verify-events
