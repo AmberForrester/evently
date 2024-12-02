@@ -144,7 +144,7 @@ Use the following links below to help you configure your project:
 
 [Clerk - Webhooks](https://clerk.com/docs/webhooks/sync-data)
 
-Following the above documentation to subsribe to all user events - 
+Following the above documentation to subsribe to all <ins>user</ins> events - 
 
 <img src="/public/assets/images/webhook_events.png" alt="Clerk Subscribed Webhook Events">
 
