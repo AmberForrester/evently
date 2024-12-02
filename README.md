@@ -196,19 +196,6 @@ Simulate payments with your integration using their test cards -
 
 
 
-# Home Page 
-<img src="/public/assets/images/StoreItHome.png" alt="StoreIt home page">
-
-# OTP Verification
-<img src="/public/assets/images/OTPVerification.png" alt="OTP Verfication page">
-
-# Storage Dashboard
-<img src="/public/assets/images/StorageDashboard.png" alt="Storage Dashboard">
-
-<p align="right">(<a href="#readme-top">top of page</a>)</p>
-
-
-
 ### Contributing
 
 I have learned that contributions are the heart of what makes the open source community such an amazing place! We are constantly able to learn, grow, inspire eachother, and create incredible things. Any contributions you make are **greatly appreciated**, we are so lucky to be here together.
@@ -253,6 +240,6 @@ Please take some time to check out the links below! I found value in each and ev
 * [GitHub Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#animal-bug)
 
 > [!TIP]
-> Deploy your Next.js application using the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) directly from the creators of Next.js <br />
+> Deploy your Next.js application using the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) directly from the creators of Next.js
 
 <p align="right">(<a href="#readme-top">top of page</a>)</p>
