@@ -44,8 +44,20 @@ Built with cutting-edge tools like Next.js 14, Tailwind CSS, and Clerk for a sec
 
 
 ## Features
-- **...:** ...
-
+- **User Authentication & Management:** Implement secure user access with Clerk, ensuring seamless account creation, login, and session handling while integrating efficient CRUD operations for user data.
+- **Comprehensive Event Functionality:** Develop dynamic features for full event lifecycle management - 
+  - Add New Events: Design user-friendly forms using React Hook Form with Zod validation to streamline event creation. 
+  - View Event Details: Engineer detailed event pages with optimized database queries using Mongoose and efficient routing in Next.js.
+  - Edit Existing Events: Enable real-time updates to event information while preserving data accuracy through validation and user feedback. 
+  - Remove Events: Implement straightforward yet secure deletion workflows, empowering users to manage their events effectively. 
+- **Event Recommendations:** Design a feature to highlight related events on individual event and profile pages, using custom database logic to enhance content discovery.
+- **Personalized Event Organization:** Build user dashboards displaying events created by each user, with a visually structured layout powered by Tailwind CSS for a clean, responsive experience. 
+- **Advanced Search & Filtering:** Implement robust search and filter options, combining server-side rendering with client-side interactivity for quick, precise results tailored to user preferences. 
+- **Flexible Event Categorization:** Design dynamic category management, enabling effortless addition of new event categories for a continually adaptable platform.
+- **Integrated Payment Solutions:** Deliver seamless payment processing with Stripe, handling transactions securely and ensuring smooth checkout experiences for users.
+- **Order Tracking & Management:** Build a comprehensive order management system, giving users and admins clear insights into transaction histories and event purchases.
+- **Efficient Order Search:** Develop quick and accurate order search functionality, utilizing advanced Mongoose aggregation pipelines to streamline tracking. 
+- **Scalable code Architecture:** Design modular and reusable codebase in Next.js 14, focusing on maintainability, scalability, and developer efficiency. 
 
 <p align="right">(<a href="#readme-top">top of page</a>)</p>
 
