@@ -168,9 +168,16 @@ Listen to events in your Stripe account on your webhook endpoint -
 
 Register your endpoint within [Stripe - Dashboard](https://dashboard.stripe.com/apikeys)
 
-Follow this [Stripe-hosted page (Next.js)](https://docs.stripe.com/checkout/quickstart?lang=node&client=next), using their interactive working code samples to integrate with Stripe Checkout. 
+Follow [Stripe-hosted page (Next.js)](https://docs.stripe.com/checkout/quickstart?lang=node&client=next) using their interactive working code samples to integrate with Stripe Checkout. 
 
+> [!WARNING]
+> Make sure within your Stripe Dashboard it is set to "Test Mode"
 
+Simulate payments with your integration using their test cards - 
+
+[Stripe Test Cards](https://docs.stripe.com/testing)
+
+<img src="/public/assets/images/stripe_test_card.png" alt="Stripe Test Card">
 
 <p align="right">(<a href="#readme-top">top of page</a>)</p>
 
@@ -249,13 +256,3 @@ Please take some time to check out the links below! I found value in each and ev
 > Deploy your Next.js application using the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) directly from the creators of Next.js <br />
 
 <p align="right">(<a href="#readme-top">top of page</a>)</p>
-
-
-
-
-
-
-* [Stripe-hosted page Docs(Next.js)](https://docs.stripe.com/checkout/quickstart?lang=node&client=next)
-
-Stripe Test Card
-https://docs.stripe.com/testing
