@@ -32,6 +32,7 @@ Built with cutting-edge tools like Next.js 14, Tailwind CSS, and Clerk for a sec
     <li><a href="#features">Features</a></li>
     <li><a href="#installation">Installation</a></li>
     <li><a href="#steps-to-install">Steps to Install</a></li>
+    <li><a href="#special-considerations">Special Considerations</a></li>
     <li><a href="#how-to-run-the-application">How to Run the Application</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -67,10 +68,10 @@ Built with cutting-edge tools like Next.js 14, Tailwind CSS, and Clerk for a sec
 - [npm](https://www.npmjs.com/)
 - [Shadcn/ui](https://ui.shadcn.com/docs)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [Clerk](https://clerk.com/) - Authentication and User Management
-- [MongoDB](https://www.mongodb.com/) - Utilizing a mongoose connection
-- [Zod](https://zod.dev/) - TypeScript-first schema validation
-- [Postman](https://www.postman.com/) - Collaborative API development
+- [Clerk](https://clerk.com/)
+- [MongoDB](https://www.mongodb.com/)
+- [Zod](https://zod.dev/)
+- [Postman](https://www.postman.com/)
 - [Stripe](https://stripe.com/)
 
 
@@ -118,10 +119,8 @@ Create a new file named `.env.local` in the root of your project directory and a
 
     STRIPE_WEBHOOK_SECRET=
 
-    NEXT_PUBLIC_SERVER_URL=http://localhost:3000/
-   ```
-
-Use the key provided after creating your account and new project with [](). 
+    NEXT_PUBLIC_SERVER_URL=http://localhost:3000/ or your_custom_domain
+   ``` 
 
 5. **Add `.env.local` to `.gitignore`**
 
@@ -134,6 +133,33 @@ Use the key provided after creating your account and new project with []().
    ```
 
 This step will prevent the `.env.local` file from being tracked by Git and keep your sensitive credentials secure. 
+
+
+
+### Special Considerations
+
+Use the following links below to help you configure your project: 
+
+1. It it highly recommended that you sync your Clerk data to your application using webhooks:
+
+[Clerk - Webhooks](https://clerk.com/docs/webhooks/sync-data)
+
+Following the above documentation to subsribe to all user events - 
+
+<img src="/public/assets/images/webhook_events.png" alt="Clerk Subscribed Webhook Events">
+
+
+
+2. Add custom session tokens to include additional claims that you may need in your application: 
+
+[Clerk - Customize Session Tokens](https://clerk.com/docs/backend-requests/making/custom-session-token)
+
+<img src="/public/assets/images/custom_session_token.png" alt="Customized Session Token using Clerk's Dashboard">
+
+
+
+
+<p align="right">(<a href="#readme-top">top of page</a>)</p>
 
 
 
@@ -195,7 +221,11 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Please take some time to check out the links below! I found value in each and every one of them while creating this project, so my hope is that you will to!
 
-* [Google Drive Clone with Next.js 15](https://youtu.be/lie0cr3wESQ?si=2ec5nZEWd7a7sYll) - Special thank you to _JavaScript Mastery_ for the tutorial!
+* [Full Stack Next 14 MERN Events App](https://youtu.be/zgGhzuBZOQg?si=9MwM9d9nYH3qgZXU) - Special thank you to _JavaScript Mastery_ for the tutorial!
+* [Next.js deployment documentation](https://nextjs.org/docs/deployment)
+* [Vercel Functions](https://vercel.com/docs/functions)
+* [useDropzone - uploadthing for Next.js](https://v6.docs.uploadthing.com/api-reference/react#usedropzone)
+* [Mongoose](https://www.npmjs.com/package/mongoose)
 * [Best README Template](https://github.com/othneildrew/Best-README-Template)
 * [Basic Syntax: Markdown Guide](https://www.markdownguide.org/basic-syntax/#reference-style-links)
 * [Formatting Syntax: GitHub](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
@@ -203,19 +233,15 @@ Please take some time to check out the links below! I found value in each and ev
 * [GitHub Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#animal-bug)
 
 > [!TIP]
-> Deploy your Next.js application using the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) directly from the creators of Next.js! <br />
-> For more details, check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment).
+> Deploy your Next.js application using the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) directly from the creators of Next.js <br />
 
 <p align="right">(<a href="#readme-top">top of page</a>)</p>
 
 
 
 
-* [Clerk - Webhooks](https://clerk.com/docs/webhooks/sync-data)
-* [Clerk - Customize Session Tokens](https://clerk.com/docs/backend-requests/making/custom-session-token)
-* [Vercel Functions](https://vercel.com/docs/functions)
-* [useDropzone - uploadthing for Next.js](https://v6.docs.uploadthing.com/api-reference/react#usedropzone)
-* [Mongoose](https://www.npmjs.com/package/mongoose)
+
+
 * [Stripe-hosted page Docs(Next.js)](https://docs.stripe.com/checkout/quickstart?lang=node&client=next)
 
 Stripe Test Card
