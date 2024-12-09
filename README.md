@@ -28,8 +28,8 @@ Built with cutting-edge tools like Next.js 14, Tailwind CSS, and Clerk for a sec
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#project-structure">Project Structure</a></li>
     <li><a href="#features">Features</a></li>
+    <li><a href="#project-structure">Project Structure</a></li>
     <li><a href="#installation">Installation</a></li>
     <li><a href="#steps-to-install">Steps to Install</a></li>
     <li><a href="#special-considerations">Special Considerations</a></li>
