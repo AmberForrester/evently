@@ -44,20 +44,19 @@ Built with cutting-edge tools like Next.js 14, Tailwind CSS, and Clerk for a sec
 
 
 ## Features
-- **User Authentication & Management:** Implement secure user access with Clerk, ensuring seamless account creation, login, and session handling while integrating efficient CRUD operations for user data.
-- **Comprehensive Event Functionality:** Develop dynamic features for full event lifecycle management - 
-  - Add New Events: Design user-friendly forms using React Hook Form with Zod validation to streamline event creation. 
-  - View Event Details: Engineer detailed event pages with optimized database queries using Mongoose and efficient routing in Next.js.
+- **Robust User Authentication:** Leveraging Clerk to implement secure, scalable user authentication and management with seamless account creation, login, and session handling.
+- **Dynamic Event Lifecycle Management:** Building end-to-end features for events, including - 
+  - Creation: Crafting user-friendly event creation forms with React Hook Form and Zod validation. 
+  - Detail Views: Optimizing event detail pages with advanced database queries using Mongoose and Next.js routing.
   - Edit Existing Events: Enable real-time updates to event information while preserving data accuracy through validation and user feedback. 
   - Remove Events: Implement straightforward yet secure deletion workflows, empowering users to manage their events effectively. 
-- **Event Recommendations:** Design a feature to highlight related events on individual event and profile pages, using custom database logic to enhance content discovery.
-- **Personalized Event Organization:** Build user dashboards displaying events created by each user, with a visually structured layout powered by Tailwind CSS for a clean, responsive experience. 
-- **Advanced Search & Filtering:** Implement robust search and filter options, combining server-side rendering with client-side interactivity for quick, precise results tailored to user preferences. 
-- **Flexible Event Categorization:** Design dynamic category management, enabling effortless addition of new event categories for a continually adaptable platform.
-- **Integrated Payment Solutions:** Deliver seamless payment processing with Stripe, handling transactions securely and ensuring smooth checkout experiences for users.
-- **Order Tracking & Management:** Build a comprehensive order management system, giving users and admins clear insights into transaction histories and event purchases.
-- **Efficient Order Search:** Develop quick and accurate order search functionality, utilizing advanced Mongoose aggregation pipelines to streamline tracking. 
-- **Scalable code Architecture:** Design modular and reusable codebase in Next.js 14, focusing on maintainability, scalability, and developer efficiency. 
+- **Intelligent Event Recommendations:** Designing a recommendation engine to enhance user engagement by showcasing related events on profile and event detail pages.
+- **Personalized User Dashboards:** Creating visually compelling dashboards with Tailwind CSS, displaying user-specific events for intuitive organization. 
+- **Advanced Search and Filters:** Implementing efficient search and filtering functionality using server-side rendering and client-side interactivity for precise results.
+- **Dynamic Event Categories:** Designing a flexible category management system to accommodate evolving event types with ease.
+- **Integrated Payment System:** Developing secure and seamless payment processing powered by Stripe, ensuring user-friendly checkout experiences.
+- **Comprehensive Order Management:** Building an intuitive order tracking system, including searchable transaction histories for both users and administrators.
+- **Scalable Architecture:** Architecting a modular, reusable Next.js codebase for enhanced scalability, maintainability, and team collaboration.
 
 <p align="right">(<a href="#readme-top">top of page</a>)</p>
 
